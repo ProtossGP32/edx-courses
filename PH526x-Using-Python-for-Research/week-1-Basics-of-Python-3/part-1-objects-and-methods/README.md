@@ -123,9 +123,10 @@ After running `import numpy as np`, if you want to access the square root functi
 
 ## Numbers and Basic Calculations
 Video here: [[LINK]](media/1.1.4-numbers-and-basic-calculations.mp4)
-Check the notebook example [1.1.4-numbers-and-basic-calculations.ipynb](scripts/1.1.4-numbers-and-basic-calculations.ipynb)
 
-### Types of numbers
+Check the notebook example [1.1.5-random-choice.ipynb](scripts1.1.5-random-choice.ipynb)
+
+###  of numbers
 Python provides 3 different type of numbers:
 - Integer numbers:
 - Floating point numbers:
@@ -151,3 +152,34 @@ What is the value of 4 factorial (4!)?
 ```
 
 ## Random choice
+Video here: [[LINK]](media/1.1.5-random-choice.mp4)
+
+Check the notebook example [1.1.5-random-choice.ipynb](scripts/1.1.5-random-choice.ipynb)
+
+Python module for random operations is `random`
+
+- `random.choice()` returns a random value from a given iterable object
+
+### Comprehension check
+#### Question 1
+True or false: `random.choice` will not work on immutable types
+
+- FALSE: `random.choice` only requires that the object has several values regardless of mutability.
+
+## Expressions and Booleans
+Video here: [[LINK]](media/1.1.6-expressions-and-booleans.mp4)
+
+Check the notebook example [1.1.6-expressions-and-booleans.ipynb](scripts/1.1.6-expressions-and-booleans.ipynb)
+
+### Comprehension check
+#### Question 1
+
+Consider the expression `True and not False is True`. What will return?
+
+- `True`
+
+#### Question 2
+
+What is the difference between `==` and `is`?
+
+- `==` tests whether objects have the same value, whereas `is` tests whether objects have the same identity.
