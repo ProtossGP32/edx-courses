@@ -126,7 +126,7 @@ Video here: [[LINK]](media/1.1.4-numbers-and-basic-calculations.mp4)
 
 Check the notebook example [1.1.5-random-choice.ipynb](scripts1.1.5-random-choice.ipynb)
 
-###  of numbers
+### Types of numbers
 Python provides 3 different type of numbers:
 - Integer numbers:
 - Floating point numbers:
