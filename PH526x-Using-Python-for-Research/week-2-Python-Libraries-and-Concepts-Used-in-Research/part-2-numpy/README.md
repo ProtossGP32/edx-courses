@@ -109,7 +109,8 @@ We can also create **boolean arrays**:
   # It returns: array([7, 9])
   ```
 
-> :information_source: Remember that when you **slice an array** using the colon operator, **you get a view of the object**. This means that **if you modify it, the original array will also be modified**.
+> [!NOTE]
+> Remember that when you **slice an array** using the colon operator, **you get a view of the object**. This means that **if you modify it, the original array will also be modified**.
 >
 > This is contrast with what happens when you **index an array**, in which case **what is returned to you is a copy of the original data**.
 
@@ -120,8 +121,47 @@ Please check the lesson's notebook for questions not explained here.
 
 ## 2.2.4: Building and Examining NumPy Arrays
 
+Video here: [\[LINK\]](media/2.2.4-building-and-examining-numpy-arrays.mp4)
+
+Check the notebook example [2.2.4-building-and-examining-numpy-arrays](scripts/2.2.4-building-and-examining-numpy-arrays.ipynb)
+
 ### GOALS
 
 - Learn how to construct NumPy arrays using `np.linspace()` and `np.logspace`
 - Learn how to check the **shape** and **size** of an array
 - Learn how to determine whether the elements of an array fulfill a logical condition using `np.any()` and `np.all()`
+
+
+### Useful array building methods
+
+- `np.linspace()`: it returns an array of linearly spaced elements
+  - First argument: the starting point
+  - Second argument: the ending point, included
+  - Third argument: the number of points we want
+- `np.logspace()`: it returns an array of logarithmically spaced elements
+  - First argument: log of the starting point --> i.e: log(10) = 1
+  - Segond argument: log of the ending point --> i.e: log(100) = 2
+  - Third argument: number of elements in our array
+
+
+### Shape and size
+
+- `np.array.shape`: returns the length of each dimension of the array
+- `np.array.size`: returns the total number of elements in that array
+
+> [!NOTE]
+> Notice how `np.shape` and `np.size` don't have parenthesis. That's because they are NumPy array data attributes, not methods.
+
+
+### Logical conditioning on an array's values
+
+- `np.any()`: returns `True` or `False` depending on the logical condition passed as a parameter
+  - If any logical condition applied to a member of the array is `True`, then `np.any()` returns `True`
+  - Else, it returns `False`
+- `np.all()`: returns `True` or `False` depending on the logical condition passed as a parameter
+  - If thelogical condition applied to all members of the array is `True`, then `np.any()` returns `True`
+  - Else, it returns `False`
+
+### Comprehension check
+
+Please check the lesson's notebook for questions not explained here.
